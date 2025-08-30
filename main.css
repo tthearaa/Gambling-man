@@ -3,13 +3,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
 }
-
+/* Top header */
 .top-container{
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.header {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,3 +106,5 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/*Bottom Header*/

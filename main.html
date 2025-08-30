@@ -7,45 +7,57 @@
   <title>Gambling</title>
 </head>
 <body>
-  <div class="top">
-    <div class="top-container">
-      <h1>Title</h1>
-      <div class="top-right-buttons">
-        <button>Search</button>
-        <button>Pfp</button>
+  <div class="top-container">
+    <header class="header">
+      <!--Left section-->
+      <div class="header-left">
+        <!--Dropdown Menu-->
+        <div class="menu-dropdown">
+          <button class="menu-btn" id="menuButton">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/menu.png" alt="Menu">
+          </button>
+          <div id="menuBar" class="dropdown-contents">
+            <a href="">Account</a>
+            <a href="">News</a>
+            <a href="">Wallet</a>
+            <a href="">Insight</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+
+        <!--Website Title-->
+        <h1 class="website-title">Website Title</h1>
       </div>
-    </div>
+
+      <!--Right section-->
+      <div class="header-right">
+        <!--Search bar-->
+        <input type="search" class="search-bar" placeholder="Anything Interested?">
+        
+        <!--Profile Picture-->
+        <div class="profile-container">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" class="profile-img">
+        </div>
+      </div>
+    </header>
   </div>
+  
+  <script src="main.js">
+  //   // Toggle dropdown
+  // document.getElementById("menuButton").addEventListener("click", function (event) {
+  //   document.getElementById("menuBar").classList.toggle("show");
+  //   event.stopPropagation();
+  // });
 
-
-  <section id="home">
-    <!--Home-section-->
-    <div>
-      
-      <div>
-        <h3>Content 1</h3>
-      </div>
-
-      <div>
-
-        <div>
-          <h5>Item1</h5>
-        </div>
-        <div>
-          <h5>Item2</h5>
-        </div>
-        <div>
-          <h5>Item3</h5>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact">
-    <!--contact-section-->
-  </section>
-
+  // // Close if clicked outside
+  // window.addEventListener("click", function (event) {
+  //   const dropdown = document.getElementById("menuBar");
+  //   if (dropdown.classList.contains("show")) {
+  //     if (!event.target.closest(".menu-dropdown")) {
+  //       dropdown.classList.remove("show");
+  //     }
+  //   }
+  // });
+  </script>
 </body>
 </html>

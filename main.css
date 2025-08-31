@@ -3,13 +3,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
 }
-
+/* Top header */
 .top-container{
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.header {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,6 +106,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
+<<<<<<< HEAD
 .logo-box{
   width: 90vw;
   height: 70px;
@@ -132,3 +133,7 @@ body {
   margin: 2px 10px 2px 12px;
   flex: 0 0 auto;            
 }
+=======
+
+/*Bottom Header*/
+>>>>>>> b748e887cd6ac0edc3b4911cad79a621ae8cdc68

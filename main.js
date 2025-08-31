@@ -14,4 +14,3 @@ const toggleDropdown = (btnId, menuId) => {
   });
 };
 
-toggleDropdown("menuButton", "menuBar");

@@ -8,9 +8,10 @@ const toggleDropdown = (btnId, menuId) => {
   });
 
   window.addEventListener("click", (event) => {
-    if (!event.target.closest(".manu-dropdown")) {
+    if (!event.target.closest(".menu-dropdown")) {
       menu.classList.remove("show");
     }
   });
 };
 
+toggleDropdown("menuButton", "menuBar");

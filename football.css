@@ -4,7 +4,7 @@ p {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url(background\ img/background.jpg);
+  background-image: url(background.jpg);
   height: 3000px;
   background-size: cover;
   background-attachment: fixed;
@@ -117,85 +117,17 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-.sport-menu-container {
-  margin: 70px 250px auto 250px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  height: 130px;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.13);
-  align-items: center;
-  border-radius: 20px;
-}
-.sport {
-  height: 50px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.sport-container:hover .title{
-  opacity: 1;
-}
-.sport-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 100px;
-  position: relative;
-  background-color: white;
-  border-radius: 10px;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-a:active {
-  color: black;
-}
-.title {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  margin: 0;
-  background-color: rgb(232, 232, 232);
-  padding: 8px;
-  opacity: 0;
-  border-radius: 5px;
-  pointer-events: none;
-  transition: opacity 0.15s;
-  font-weight: bold;
-}
-
-.trending-container {
-  margin: 0px 50px 20px 50px;
-  background-color: rgba(255, 255, 255, 0.34);
-  display: flex;
-  height: 240px;
-  border-radius: 20px;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  gap: 15px;
-  scrollbar-width: none;
+.betting {
+  margin-top: 59px;
 }
 .match {
-  height: 200px;
-  border-radius: 20px;
+  background-color: lightblue;
+  display: flex;
+  height: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
-.trending-title {
-  color: blue;
+.match button {
   background-color: white;
-  padding: 10px;
-  margin-left: 50px;
-  border-radius: 10px;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 5px;
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+    <div class="top-container">
+    <header class="header-top">
+      <!--Left section-->
+      <div class="header-left">
+        <!--Dropdown Menu-->
+        <div class="menu-dropdown">
+          <button class="menu-btn" id="menuButton">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/menu.png" alt="Menu">
+          </button>
+          <div id="menuBar" class="dropdown-contents">
+            <a href="login/account.html" style="text-decoration: none; color: #000;">Account</a>
+            <a href="">News</a>
+            <a href="wallet.html" style="text-decoration: none; color: #000;">Wallet</a>
+            <a href="">Insight</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+
+        <!--Website Title-->
+        <a href="main.html" style="text-decoration: none; color: black;">
+          <h1 class="website-title"><span style="color: blue;">Gam</span>bling</h1>
+        </a>
+      </div>
+
+      <!--Right section-->
+      <div class="header-right">
+        <!--Search bar-->
+        <input type="search" class="search-bar" placeholder="Anything Interested?">
+        
+        <!--Profile Picture-->
+        <div class="profile-container">
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" class="profile-img">
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="login-container">
+    <div class="toggle-login">
+      <span id="loginBtn" class="active">Login</span>
+      <span id="signupBtn">Sign In</span>
+    </div>
+
+    <div class="form-container" id="form-container">
+      <!--Login-->
+      <form class="form active" id="loginForm">
+        <h2 style="font-weight: 700; font-size: 28px;">Login</h2>
+        <label style="font-weight: 600;">Username</label><br>
+        <input style="font-weight: 600; font-size: 12px;" type="text" placeholder="Enter Username">
+        <br>
+        <label style="font-weight: 600;">Password</label><br>
+        <input style="font-weight: 600; font-size: 12px;" type="password" placeholder="Enter Password">
+        <br>
+        <button type="submit" style="font-weight: 600;">Login</button>
+      </form>
+
+      <!--Sign Up-->
+      <form id="signupForm" class="form">
+        <h2>Sign Up</h2>
+        <label style="font-weight: 600;">Username</label><br>
+        <input style="font-weight: 600; font-size: 12px;" type="text" placeholder="Enter Username">
+        <br>
+        <label style="font-weight: 600;">Password</label><br>
+        <input style="font-weight: 600; font-size: 12px;" type="password" placeholder="Enter Password">
+        <br>
+        <label style="font-weight: 600;">Confirm Password</label><br>
+        <input style="font-weight: 600; font-size: 12px;" type="password" placeholder="Confirm Password">
+        <br>
+        <label style="font-weight: 600;">Email</label><br>
+        <input style="font-weight: 600; font-size: 12px;" type="email" placeholder="Enter Email">
+        <br>
+        <button type="submit" style="font-weight: 600;">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  <script src="javascript/login.js"></script>
+  <script src="javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+p {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(background\ img/background.jpg);
+  height: 3000px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Top header */
+.top-container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd ;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.website-title{
+  margin: 0;
+  font-size: 22px;
+}
+
+.menu-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn img{
+  width: 26px;
+  height: 26px;
+}
+
+.menu-dropdown{
+  position: relative;
+}
+
+.dropdown-contents{
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 150px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-contents a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-contents a:hover{
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar{
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.profile-container{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  border: 3px solid #4caf50;
+  cursor: pointer
+}
+
+.profile-container:hover{
+  border-color: #2e7d32;
+}
+
+.profile-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sport-menu-container {
+  margin: 70px 250px auto 250px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 130px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  align-items: center;
+  border-radius: 20px;
+}
+.sport {
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sport-container:hover .title{
+  opacity: 1;
+}
+.sport-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  color: black;
+}
+.title {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  margin: 0;
+  background-color: rgb(232, 232, 232);
+  padding: 8px;
+  opacity: 0;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  font-weight: bold;
+}
+
+.trending-container {
+  margin: 0px 50px 20px 50px;
+  background-color: rgba(255, 255, 255, 0.34);
+  display: flex;
+  height: 240px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 15px;
+  scrollbar-width: none;
+}
+.match {
+  height: 200px;
+  border-radius: 20px;
+}
+.trending-title {
+  color: blue;
+  background-color: white;
+  padding: 10px;
+  margin-left: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}

@@ -15,3 +15,15 @@ const toggleDropdown = (btnId, menuId) => {
 };
 
 toggleDropdown("menuButton", "menuBar");
+
+// const AccountChecking = (btnId) => {
+//   const btnId = document.getElementById(btnId);
+
+//   btnId.addEventListener("click", () =>{
+//     if (localStorage.getItem("isLoggedIn") === "true"){
+//       window.location.href = "account.html";
+//     } else {
+//       window.location.href = "login.html";
+//     }
+//   })
+// }

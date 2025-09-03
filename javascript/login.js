@@ -4,7 +4,7 @@ const loginForm = document.getElementById("loginForm");
 const signupForm = document.getElementById("signupForm");
 const container = document.getElementById("form-container");
 
-loginBtn.addEventListener("click", () =>{
+loginBtn.addEventListener("click", () => {
     container.style.height = "21em";
     loginBtn.classList.add("active");
     signupBtn.classList.remove("active");

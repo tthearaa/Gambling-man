@@ -1,23 +1,58 @@
-const User = "abcde";
-const Pass = "12345";
-
-const form = document.getElementById("loginForm");
-const msg = document.getElementById("message");
-
-if (localStorage.getItem("isLoggedIn") === "true"){
-    window.location.href = "account.html";
+if (!localStorage.getItem("LoggedIn")) {
+    window.location.href = "login.html";
 }
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+const editBtn = document.getElementById("editBtn");
+const cancelBtn = document.getElementById("cancelBtn");
+const inputs = document.querySelectorAll(".details input");
+const uploadPic = document.getElementById("uploadPic");
+const profilePic = document.getElementById("profilePic");
 
-    const userInput = document.getElementById("username").value;
-    const passInput = document.getElementById("password").value;
+let isEditing = false;
+let originalValues = {};
 
-    if (userInput === User && passInput == Pass){
-        localStorage.setItem("isLoggedIn", "true");
-        localStorage.setItem("username", userInput);
+editBtn.addEventListener("click", () => {
+  isEditing = !isEditing;
 
-        setTimeout(() => window.location.href = "account.html", 1000);
+  if (isEditing) {
+    inputs.forEach(input => {
+      originalValues[input.id] = input.value;
+      input.disabled = false;
+    });
+
+    uploadPic.disabled = false;
+
+    editBtn.textContent = "Save";
+    cancelBtn.style.display = "inline-block";
+  } else {
+    inputs.forEach(input => input.disabled = true);
+    uploadPic.disabled = true;
+
+    editBtn.textContent = "Edit";
+    cancelBtn.style.display = "none";
+  }
+});
+
+cancelBtn.addEventListener("click", () => {
+  inputs.forEach(input => {
+    if (originalValues[input.id] !== undefined) {
+      input.value = originalValues[input.id];
     }
+    input.disabled = true;
+  });
+
+  uploadPic.disabled = true;
+
+  editBtn.textContent = "Edit";
+  cancelBtn.style.display = "none";
+  isEditing = false;
+});
+
+uploadPic.addEventListener("change", (event) => {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = (e) => profilePic.src = e.target.result;
+    reader.readAsDataURL(file);
+  }
 });

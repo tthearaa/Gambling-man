@@ -17,7 +17,7 @@
             <img src="https://img.icons8.com/ios-glyphs/30/000000/menu.png" alt="Menu">
           </button>
           <div id="menuBar" class="dropdown-contents">
-            <a href="account.html" style="text-decoration: none; color: #000;">Account</a>
+            <a id="accountBtn" href="#" style="text-decoration: none; color: #000;">Account</a>
             <a href="">News</a>
             <a href="wallet.html" style="text-decoration: none; color: #000;">Wallet</a>
             <a href="">Insight</a>
@@ -33,16 +33,71 @@
 
       <!--Right section-->
       <div class="header-right">
-        <!--Search bar-->
         <input type="search" class="search-bar" placeholder="Anything Interested?">
-        
-        <!--Profile Picture-->
-        <div class="profile-container">
-          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" class="profile-img">
-        </div>
       </div>
     </header>
   </div>
-  <script src="main.js"></script>
+
+  <div class="container">
+    <!-- Left side: profile picture + buttons -->
+    <div class="profile">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" id="profilePic">
+      
+      <!-- Change Profile -->
+      <label for="uploadPic" class="btn">Change Profile</label>
+      <input type="file" id="uploadPic" accept="image/*" disabled>
+      
+      <!-- Logout button -->
+      <button id="logoutBtn" class="btn">Logout</button>
+    </div>
+
+    <!-- Right side: account details -->
+    <div class="details">
+      <h2>Account Details</h2>
+
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" value="user1234" disabled>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" value="pass1234" disabled>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" value="user@gmail.com" disabled>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. +855 12 345 678" disabled>
+      </div>
+
+      <div>
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g. Phnom Penh, Cambodia" disabled>
+      </div>
+
+      <div class="buttons">
+        <button id="editBtn" class="btn">Edit</button>
+        <button id="cancelBtn" class="btn cancel" style="display: none;">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript/account.js"></script>
+  <script src="javascript/dropdown.js"></script>
+  <script src="javascript/main.js"></script>
+  <script>
+    const logoutBtn = document.getElementById("logoutBtn");
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("LoggedIn");
+        window.location.href = "main.html";
+      });
+    }
+  </script>
 </body>
 </html>

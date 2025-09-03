@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-image: url(background.jpg);
-  height: 3000px;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -148,7 +148,6 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 400px;
-
 }
 .team{
   /* background-color: blue; */

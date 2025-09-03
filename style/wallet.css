@@ -4,9 +4,10 @@ p {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url(background\ img/background.jpg);
+  /* background-image: url(background\ img/background.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+  background-color: white;
 }
 /* Top header */
 .top-container{
@@ -115,4 +116,131 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.wellcome-msg {
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  margin-left: 40px;
+}
+.money-detail {
+  background-color: rgb(238, 238, 238);
+  margin: 70px 100px auto 100px;
+  height: 760px;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+.money-container {
+  display: flex;
+}
+.money-outcome,
+.money-income {
+  background-color: white;
+  margin-left: 20px;
+  height: 170px;
+  width: 360px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.money-out-in {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.in-percent {
+  background-color: rgb(215, 255, 233);
+  color: rgb(16, 143, 16);
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+.out-percent {
+  background-color: rgb(255, 214, 214);
+  color: rgb(143, 16, 16);
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(76, 76, 76);
+  color: white;
+  height: 230px;
+  border-radius: 10px;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+#top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+.card-container {
+  background-color: white;
+  margin-left: 5px;
+  width: 400px;
+  height: 265px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.in-out-container {
+  display: flex;
+}
+.prediction {
+  margin-left: 10px;
+  margin-top: 13px;
+  height: 504px;
+}
+.card-right {
+  display: flex;
+  flex-direction: column;
+}
+.more {
+  background-color: white;
+  height: 346px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 7px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* history */
+.history {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
+#history {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;  
+}
+.more-left-sec {
+  display: flex;
+  flex-direction: column;
 }
